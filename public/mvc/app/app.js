@@ -1,9 +1,9 @@
 Ext.application({
-    name: 'Pandora',
+    name: 'mvc',
     
     autoCreateViewport: true,
     
-    models: ['Station', 'Song'],    
-    stores: ['Stations', 'RecentSongs', 'SearchResults'],
-    controllers: ['Station', 'Song']
+    // models: ['Station', 'Song'],    
+    // stores: ['Stations', 'RecentSongs', 'SearchResults'],
+    controllers: ['FooController']
 });
