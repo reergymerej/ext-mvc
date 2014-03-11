@@ -5,5 +5,5 @@ Ext.application({
     
     // models: ['Station', 'Song'],    
     // stores: ['Stations', 'RecentSongs', 'SearchResults'],
-    controllers: ['FooController']
+    controllers: ['ComponentController', 'FooController']
 });

@@ -1,5 +1,5 @@
 Ext.define('mvc.controller.FooController', {
-    extend: 'Ext.app.Controller',
+    extend: 'mvc.controller.ComponentController',
 
     refs: [
         {
@@ -13,7 +13,8 @@ Ext.define('mvc.controller.FooController', {
     init: function() {
         this.control({
             'fooview': {
-                click: this.onFooClick
+                click: this.onFooClick,
+                'some-funky-event': this.onSomeFunkyEvent
             }
         });
         
@@ -25,5 +26,9 @@ Ext.define('mvc.controller.FooController', {
         
     onFooClick: function () {
         console.log('clicked foo', this);
+    },
+
+    onSomeFunkyEvent: function () {
+        console.log('onSomeFunkyEvent');
     }
 });

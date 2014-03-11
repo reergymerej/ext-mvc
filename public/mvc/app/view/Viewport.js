@@ -21,7 +21,13 @@ Ext.define('mvc.view.Viewport', {
                         xtype: 'fooview'
                     },
                     {
-                        html: 'hello'
+                        title: 'private foo',
+                        items: [
+                            {
+                                xtype: 'fooview',
+                                controller: 'mvc.controller.FooController'
+                            }
+                        ]
                     }
                 ]
             }
